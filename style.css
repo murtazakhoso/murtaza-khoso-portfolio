@@ -662,3 +662,43 @@ body {
     }
 
 }
+ /* =========================
+    SOCIAL LINKS
+ ========================= */
+
+.social-links {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 12px 22px;
+    border: 1px solid rgba(251, 250, 246, 0.2);
+    border-radius: 5px;
+    color: #FBFAF6;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #0A875F;
+    border-color: #0A875F;
+    transform: translateY(-3px);
+}
+
+
+/* SOCIAL LINKS MOBILE */
+
+@media (max-width: 800px) {
+
+    .social-links {
+        justify-content: center;
+    }
+
+}
