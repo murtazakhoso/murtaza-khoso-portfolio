@@ -702,3 +702,100 @@ body {
     }
 
 }
+/* =========================
+   WORK PORTFOLIO
+========================= */
+
+.work-portfolio {
+    padding: 110px 8%;
+    background: #FBFAF6;
+    color: #0D234A;
+}
+
+.work-heading {
+    max-width: 700px;
+    margin-bottom: 60px;
+}
+
+.work-heading h2 {
+    font-size: clamp(40px, 5vw, 64px);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.work-heading > p:last-child {
+    color: #4E596B;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+.work-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.work-button {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+    padding: 40px;
+    background: #FFFFFF;
+    border: 1px solid #E1E4E8;
+    border-radius: 12px;
+    color: #0D234A;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.work-button:hover {
+    transform: translateY(-7px);
+    border-color: #0A875F;
+    box-shadow: 0 18px 45px rgba(13, 35, 74, 0.12);
+}
+
+.work-button span {
+    color: #0A875F;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: auto;
+}
+
+.work-button strong {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.work-button small {
+    color: #5D6675;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* WORK MOBILE */
+
+@media (max-width: 700px) {
+
+    .work-portfolio {
+        padding: 80px 6%;
+    }
+
+    .work-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .work-button {
+        min-height: 220px;
+        padding: 30px;
+    }
+
+    .work-button strong {
+        font-size: 25px;
+    }
+
+}
