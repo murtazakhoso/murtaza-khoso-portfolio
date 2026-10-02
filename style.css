@@ -1112,3 +1112,257 @@ body {
     }
 
 }
+```css
+/* =========================================================
+   LOGO DESIGN GALLERY
+   ========================================================= */
+
+.logo-design-section {
+    padding: 100px 8%;
+    background: #f7f7f5;
+    scroll-margin-top: 80px;
+}
+
+.logo-design-heading {
+    max-width: 720px;
+    margin-bottom: 55px;
+}
+
+.logo-design-heading h2 {
+    margin: 12px 0 18px;
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: 1.1;
+    color: #111;
+}
+
+.logo-design-heading p:last-child {
+    margin: 0;
+    max-width: 650px;
+    color: #666;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* LOGO PROJECT GRID */
+
+.logo-design-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+}
+
+
+/* PROJECT CARD */
+
+.logo-project-card {
+    background: #fff;
+    border: 1px solid #e7e7e4;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ORIGINAL + MOCKUP AREA */
+
+.logo-project-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1px;
+    background: #e7e7e4;
+}
+
+.logo-image-box {
+    position: relative;
+    min-height: 280px;
+    background: #f2f2ef;
+    overflow: hidden;
+}
+
+.logo-image-box span {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    z-index: 2;
+    padding: 7px 11px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.92);
+    color: #222;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.logo-image-box img {
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+.logo-project-card:hover .logo-image-box img {
+    transform: scale(1.03);
+}
+
+
+/* PROJECT INFORMATION */
+
+.logo-project-info {
+    padding: 25px 26px 28px;
+}
+
+.logo-project-info > span {
+    display: block;
+    margin-bottom: 9px;
+    color: #777;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.logo-project-info h3 {
+    margin: 0 0 9px;
+    color: #111;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.logo-project-info p {
+    margin: 0;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+
+/* SINGLE IMAGE LOGO */
+
+.logo-single-project {
+    grid-column: span 2;
+}
+
+.logo-single-project .logo-project-images {
+    display: block;
+}
+
+.logo-single-project .logo-single-image {
+    min-height: 420px;
+}
+
+.logo-single-project .logo-single-image img {
+    min-height: 420px;
+}
+
+
+/* BACK TO CATEGORY */
+
+.logo-section-footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.back-to-category {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 22px;
+    border: 1px solid #d8d8d4;
+    border-radius: 30px;
+    color: #222;
+    background: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.back-to-category:hover {
+    background: #111;
+    color: #fff;
+    border-color: #111;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .logo-design-section {
+        padding: 80px 6%;
+    }
+
+    .logo-design-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-single-project {
+        grid-column: span 1;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .logo-design-section {
+        padding: 65px 5%;
+    }
+
+    .logo-design-heading {
+        margin-bottom: 38px;
+    }
+
+    .logo-design-heading h2 {
+        font-size: 34px;
+    }
+
+    .logo-design-heading p:last-child {
+        font-size: 15px;
+    }
+
+    .logo-project-images {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-image-box {
+        min-height: 250px;
+    }
+
+    .logo-image-box img {
+        min-height: 250px;
+    }
+
+    .logo-single-project .logo-single-image {
+        min-height: 300px;
+    }
+
+    .logo-single-project .logo-single-image img {
+        min-height: 300px;
+    }
+
+    .logo-project-info {
+        padding: 22px 20px 24px;
+    }
+
+    .logo-project-info h3 {
+        font-size: 21px;
+    }
+
+}
+```
+
