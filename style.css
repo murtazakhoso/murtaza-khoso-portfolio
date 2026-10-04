@@ -1367,5 +1367,168 @@ body {
 .logo-design-heading h2 {
     color: #ffffff;
 }
+/* =========================================================
+   PACKAGING DESIGN GALLERY
+   ========================================================= */
+
+.packaging-design-section {
+    padding: 100px 8%;
+    background: #f7f7f5;
+    scroll-margin-top: 80px;
+}
+
+.packaging-design-heading {
+    max-width: 720px;
+    margin-bottom: 55px;
+}
+
+.packaging-design-heading h2 {
+    margin: 12px 0 18px;
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: 1.1;
+    color: #111;
+}
+
+.packaging-design-heading p:last-child {
+    margin: 0;
+    max-width: 650px;
+    color: #666;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.packaging-design-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+}
+
+.packaging-project-card {
+    background: #fff;
+    border: 1px solid #e7e7e4;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.packaging-project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+.packaging-image-box {
+    position: relative;
+    min-height: 480px;
+    background: #f2f2ef;
+    overflow: hidden;
+}
+
+.packaging-image-box span {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    z-index: 2;
+    padding: 7px 11px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.92);
+    color: #222;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.packaging-image-box img {
+    width: 100%;
+    height: 100%;
+    min-height: 480px;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+.packaging-project-card:hover .packaging-image-box img {
+    transform: scale(1.03);
+}
+
+.packaging-project-info {
+    padding: 25px 26px 28px;
+}
+
+.packaging-project-info > span {
+    display: block;
+    margin-bottom: 9px;
+    color: #777;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.packaging-project-info h3 {
+    margin: 0 0 9px;
+    color: #111;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.packaging-project-info p {
+    margin: 0;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.packaging-section-footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+
+    .packaging-design-section {
+        padding: 80px 6%;
+    }
+
+    .packaging-design-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .packaging-design-section {
+        padding: 65px 5%;
+    }
+
+    .packaging-design-heading {
+        margin-bottom: 38px;
+    }
+
+    .packaging-design-heading h2 {
+        font-size: 34px;
+    }
+
+    .packaging-design-heading p:last-child {
+        font-size: 15px;
+    }
+
+    .packaging-image-box {
+        min-height: 350px;
+    }
+
+    .packaging-image-box img {
+        min-height: 350px;
+    }
+
+    .packaging-project-info {
+        padding: 22px 20px 24px;
+    }
+
+    .packaging-project-info h3 {
+        font-size: 21px;
+    }
+
+}
 ```
 
